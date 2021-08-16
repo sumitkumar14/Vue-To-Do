@@ -33,6 +33,7 @@
     <li>{{item}}</li> <button  style="margin-left:4px;" @click="clearCompletedTask(item,i)">done</button> 
     </div>
      </div>
+  </ol>
   
     
   </div>
