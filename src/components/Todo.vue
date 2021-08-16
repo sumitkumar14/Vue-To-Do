@@ -27,9 +27,12 @@
   <h2>
   Completed Task
   </h2>
-   <ul>
-    <li v-for="(item, i) in completedTask" :key="i">{{item}} <button @click="clearCompletedTask(item,i)">clear</button></li>   
-  </ul>
+  <ol>
+    <div v-for="(item, i) in completedTask" :key="i">
+    <div style="display:inline-flex; justify-content:center; margin-bottom:8px;">
+    <li>{{item}}</li> <button  style="margin-left:4px;" @click="clearCompletedTask(item,i)">done</button> 
+    </div>
+     </div>
   
     
   </div>
